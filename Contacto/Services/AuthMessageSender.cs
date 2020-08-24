@@ -77,7 +77,7 @@ namespace Contacto.Services
                 mail.Priority = MailPriority.High;
 
                 //otras opciones
-                //mail.Attachments.Add(new Attachment(@"C:\Users\ADMIN\Documents\Visual Studio 2019\Projects\Contact\Contacto\Contacto\wwwroot\img\laptopVenta.jpg"));
+                mail.Attachments.Add(new Attachment(@"C:\Users\ADMIN\Documents\Visual Studio 2019\Projects\Contact\Contacto\Contacto\wwwroot\pdf\asp-net.pdf"));
 
                 //Y lo enviamos a través del servidor SMTP...
                 using (SmtpClient smtp = new SmtpClient(_emailSettings.PrimaryDomain, _emailSettings.PrimaryPort))
