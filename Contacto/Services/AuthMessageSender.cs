@@ -46,7 +46,7 @@ namespace Contacto.Services
                 mail.To.Add(new MailAddress(toEmail));
                 //mail.CC.Add(new MailAddress(_emailSettings.CcEmail));
 
-                mail.Subject = "Hola, " + name;
+                mail.Subject = "Hola, " + name + " | " + subject;
 
                string Body = "<table style='max - width: 600px; padding: 10px; margin: 0 auto; border - collapse: collapse; '>" +
                     "<tr><td style='background - color: #55b2c1; text-align: left; padding: 0'></td></tr>" +

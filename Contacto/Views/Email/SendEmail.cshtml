@@ -2,9 +2,15 @@
 @{
     ViewData["Title"] = "SendEmail";
 }
+
 <h2>Enviar Email</h2>
 <hr />
 <div class="row">
+
+    <div class="col-md-8" id="google-map">
+        <div id="mapa"></div>
+    </div>
+
     <div class="col-md-4">
         <form asp-action="SendEmail">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -34,3 +40,11 @@
         </form>
     </div>
 </div>
+
+<!--Script para la geolocalización-->
+<script>
+    $(document).ready(function () {
+        getGeo();
+        dibujaMapa(19.071984, -98.218453);
+    });
+</script>
