@@ -41,10 +41,35 @@
     </div>
 </div>
 
+
+<div class="row" style="height:600px">
+    <div class="col" style="height:500px">
+        <h2>Mapa con etiqueta</h2>
+        <hr />
+        <div id="etiqueta" style="height:100%"></div>
+        <div id="content">Hello world!</div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col" style="height:500px">
+        <h2>Mapa con varios pines</h2>
+        <hr />
+        <div id="geolocalizaciones" style="height:100%"></div>
+    </div>
+</div>
+
+
 <!--Script para la geolocalización-->
 <script>
     $(document).ready(function () {
         getGeo();
         dibujaMapa(19.071984, -98.218453);
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        initGeo();
     });
 </script>

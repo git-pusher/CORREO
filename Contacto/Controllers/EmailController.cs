@@ -42,7 +42,7 @@ namespace Contacto.Controllers
         {
             try
             {
-                //email destino, assunto do email, mensagem a enviar
+                //email destino, asunto, mensaje
                 await _emailSender.SendEmailAsync(name, email, subject, message);
             }
             catch (Exception ex)

@@ -10,6 +10,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
+
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
@@ -45,8 +46,16 @@
     @*<script src="~/lib/jquery/dist/jquery.min.js"></script>*@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?"></script>
+    @*sin llave*@
+    @*<script src="https://maps.googleapis.com/maps/api/js?"></script>*@
+    @*con llave*@
+    @*<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDDp9hYegX1XUOA36kdM_C-BGoRO0w3AHo&amp;sensor=false&amp;language=es"></script>*@
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    @*ejemplo de varias localizaciones*@
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDp9hYegX1XUOA36kdM_C-BGoRO0w3AHo&callback=initMap&libraries=&v=weekly" defer></script>
     <script src="~/js/geolocalizacion.js"></script>
+    <script src="~/js/geolocalizaciones.js"></script>
+    <script src="~/js/etiqueta.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
